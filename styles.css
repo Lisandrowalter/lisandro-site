@@ -93,8 +93,17 @@ button {
     cursor: pointer;
 }
 
+/* Estilos para desktop */
+@media (min-width: 769px) {
+    main {
+        padding-top: 80px; /* Espaço para o cabeçalho fixo */
+    }
+}
 /* Para celular */
 @media (max-width: 600px) {
+    header {
+        position: static; /* Remove a posição fixa em telas menores */
+    }
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -112,6 +121,6 @@ button {
     }
 
     main {
-        padding-top: 120px;
+        padding-top: 40px;
     }
 }
