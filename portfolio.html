@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Lisandro - Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LSW</a>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Meus Projetos</h1>
+        <div class="projeto">
+            <h2>Projeto Hotsite</h2>
+            <p>Um projeto desenvolvido durante meu curso de desenvolvimento back-end com PHP.</p>
+            <button onclick="mostrarDetalhes('ads')">Ver Detalhes</button>
+            <p id="detalhes-ads" style="display: none;">
+                Este projeto envolveu a criação de um hotsite simples. Foi desenvolvido utilizando Laravel.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        function mostrarDetalhes(projeto) {
+            const detalhes = document.getElementById('detalhes-' + projeto);
+            if (detalhes.style.display === 'none') {
+                detalhes.style.display = 'block';
+            } else {
+                detalhes.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

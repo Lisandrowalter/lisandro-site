@@ -1,0 +1,117 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #16213e;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4ecca3;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 80px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+
+.botao-home-contato {
+    display: inline-block;
+    color: #4ecca3;
+    border: 2px solid #4ecca3;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Formulário de contato */
+form {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4ecca3;
+    color: #1a1a2e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Para celular */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+}
